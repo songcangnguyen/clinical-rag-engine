@@ -4,7 +4,7 @@ from app.core.retriever import load_retriever
 chain = build_chain()
 retriever = load_retriever()
 
-question = "What are the main clinical guidelines mentioned in the document?"
+question = "What is your current database layout?"
 
 print(f"\nQuestion: {question}")
 print("\nThinking...\n")
