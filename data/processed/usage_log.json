@@ -1,0 +1,38 @@
+[
+  {
+    "timestamp": "2026-03-28 16:40:16",
+    "username": "dr_smith",
+    "role": "clinician",
+    "question": "What clinical guidelines are mentioned in the documents?",
+    "answer_length": 284,
+    "latency_ms": 542,
+    "source_count": 0
+  },
+  {
+    "timestamp": "2026-03-28 16:40:19",
+    "username": "admin_root",
+    "role": "admin",
+    "question": "Summarize the key policies in the documents.",
+    "answer_length": 312,
+    "latency_ms": 506,
+    "source_count": 4
+  },
+  {
+    "timestamp": "2026-03-28 16:57:36",
+    "username": "dr_smith",
+    "role": "clinician",
+    "question": "What clinical guidelines are mentioned in the documents?",
+    "answer_length": 284,
+    "latency_ms": 391,
+    "source_count": 0
+  },
+  {
+    "timestamp": "2026-03-28 16:57:39",
+    "username": "admin_root",
+    "role": "admin",
+    "question": "Summarize the key policies in the documents.",
+    "answer_length": 375,
+    "latency_ms": 487,
+    "source_count": 4
+  }
+]
