@@ -17,11 +17,9 @@ def load_retriever(role: str = "admin"):
         embedding_function=embeddings
     )
 
-    # Get what categories this role can see
     allowed_categories = get_allowed_categories(role)
     print(f"Role '{role}' can access: {allowed_categories}")
 
-    # If the role has category restrictions, filter the search
     if allowed_categories and role != "admin":
         retriever = vectorstore.as_retriever(
             search_kwargs={
@@ -30,7 +28,6 @@ def load_retriever(role: str = "admin"):
             }
         )
     else:
-        # Admin sees everything
         retriever = vectorstore.as_retriever(search_kwargs={"k": 4})
 
     print("Retriever loaded successfully.")

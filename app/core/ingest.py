@@ -21,7 +21,12 @@ def load_documents():
     for pdf_path in pdf_files:
         print(f"Loading: {pdf_path.name}")
         loader = PyPDFLoader(str(pdf_path))
-        docs.extend(loader.load())
+        pages = loader.load()
+
+        for page in pages:
+            page.metadata["category"] = "clinical"
+
+        docs.extend(pages)
 
     print(f"Loaded {len(docs)} pages total.")
     return docs
